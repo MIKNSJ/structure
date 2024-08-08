@@ -20,7 +20,7 @@ body {
 }
 
 .barrier {
-    height: 50px;
+    height: 25px;
 }
 
 header {
@@ -34,9 +34,9 @@ header {
     transform: translateY(0px);
     transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;*/
     position: sticky;
-    top: -10px;
+    top: -100px;
     z-index: 1;
-    transition: top 0.2s ease-in-out;
+    transition: top 0.5s ease-in-out;
 }
 
 .enable_sticky_header {
@@ -132,10 +132,45 @@ header {
     pointer-events: none;
 }
 
+#hero {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 5%;
+}
+
+#hero_pic {
+    display: flex;
+    width: 100%;
+    border-radius: 25px;
+    filter: brightness(75%);
+    box-shadow: 1px 1px 3px 0px rgba(0,0,0,1);
+}
+
+#hero_caption {
+    position: absolute;
+    top: 25px;
+    
+    display: block;
+    text-align: center;
+}
+
+.hero_caption_text {
+    color: white;
+}
+
+#hero_caption_title {
+    font-size: 7vw;
+}
+
+#hero_caption_comment {
+    font-size: 5vw;
+}
+
 @media screen and (min-width: 750px) {
     .nav__bar {
         position: static;
-        display: flex;
         flex-direction: row;
         align-items: stretch;
     }
@@ -163,5 +198,15 @@ header {
 
     .hide_nav_bar_options {
         opacity: 1;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    #hero_caption_title {
+        font-size: 75px;
+    }
+    
+    #hero_caption_comment {
+        font-size: 50px;
     }
 }
