@@ -190,6 +190,57 @@ header {
     font-size: 5vw;
 }
 
+#featured {
+    display: flex;
+    flex-direction: column;
+    padding: 0 5%;
+    gap: 20px;
+}
+
+#featured_text {
+    text-align: center;
+}
+
+#featured_product {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+
+    border-radius: 25px;
+    box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.5);
+    text-decoration: none;
+    color: black;
+}
+
+#mattress {
+    display: flex;
+    width: 100%;
+    border-radius: 25px;
+    box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.5);
+}
+
+#mattress_prices {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#mattress_sale_percentage {
+    color: red;
+}
+
+#mattress_tag {
+    position: absolute;
+    top: 1vh;
+    font-size: 5vw;
+    background-color: #D2042D;
+    border-radius: 25px;
+    padding: 10px;
+}
+
 #hero_two {
     position: relative;
     display: flex;
@@ -252,7 +303,7 @@ header {
     flex-basis: 0;
 }
 
-#mn-br-con06 .barrier, #mn-br-con08 .barrier {
+#mn-br-con06 .barrier, #mn-br-con08 .barrier, #mn-br-con10 .barrier {
     height: 100px;
 }
 
@@ -310,6 +361,19 @@ header {
     
     #hero_two_caption_comment {
         font-size: 50px;
+    }
+    
+    #featured_product {
+        transform: scale(1);
+        transition: transform 0.5s;
+    }
+
+    #featured_product:hover {
+        transform: scale(1.05);
+    }
+
+    #mattress_tag {
+        font-size: 35px;
     }
 
     .cat__box {
