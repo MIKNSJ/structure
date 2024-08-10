@@ -241,6 +241,44 @@ header {
     padding: 10px;
 }
 
+#popular {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 5%;
+    gap: 20px;
+}
+
+#popular_items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+}
+
+.pop_prod {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    width: 100%;
+
+    color: black;
+    text-decoration: none;
+    border-radius: 25px;
+    box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.5);
+}
+
+.pop__product_pic {
+    display: flex;
+    width: 100%;
+    flex-grow: 1;
+    flex-basis: 0;
+    border-radius: 25px;
+    box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.5);
+}
+
 #hero_two {
     position: relative;
     display: flex;
@@ -284,8 +322,15 @@ header {
     gap: 20px;
 }
 
+#cat_list {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    gap: 20px;
+}
+
 .cat__box {
-    cursor: pointer;
     border: none;
     text-decoration: none;
     color: black;
@@ -303,8 +348,12 @@ header {
     flex-basis: 0;
 }
 
-#mn-br-con06 .barrier, #mn-br-con08 .barrier, #mn-br-con10 .barrier {
+#mn-br-con05 .barrier, #mn-br-con07 .barrier, #mn-br-con09 .barrier, #mn-br-con11 .barrier, #mn-br-con13 .barrier {
     height: 100px;
+}
+
+#test {
+    text-align: center;
 }
 
 @media screen and (min-width: 750px) {
@@ -338,10 +387,15 @@ header {
     .hide_nav_bar_options {
         opacity: 1;
     }
-
-    #cat {
+    
+    #popular_items {
         flex-direction: row;
-        justify-content: space-evenly;
+        align-items: stretch;
+    }
+
+    #cat_list {
+        flex-direction: row;
+        justify-content: space-between;
         align-items: stretch;
     }
 }
@@ -369,6 +423,15 @@ header {
     }
 
     #featured_product:hover {
+        transform: scale(1.05);
+    }
+
+    .pop_prod {
+        transform: scale(1);
+        transition: transform 0.5s;
+    }
+
+    .pop_prod:hover {
         transform: scale(1.05);
     }
 
