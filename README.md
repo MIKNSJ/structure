@@ -29,7 +29,7 @@ Since assets are constantly being updated, please refer to the ```assets``` fold
 to find out more.
 
 ## Changelog
-- Website Version 1.0 established on TBD 2024
+- Website Version 1.0 established on August 2024
 
 ## License
-Established on TBD 2024 by MIKNSJ.
+Established on August 2024 by MIKNSJ.
